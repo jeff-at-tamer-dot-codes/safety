@@ -9,7 +9,7 @@ from safety.scan.render import print_wait_project_verification, prompt_project_i
 from safety_schemas.models import AuthenticationType, ProjectModel, Stage
 
 
-MISSING_SPDX_EXTENSION_MSG = "spdx extra is not installed, please install it with: pip install safety[spdx]"
+MISSING_SPDX_EXTENSION_MSG = 'spdx extra is not installed, please install it with: pip install "safety[spdx]"'
 
 
 def raise_if_not_spdx_extension_installed():
