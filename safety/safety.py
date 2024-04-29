@@ -1009,7 +1009,7 @@ def get_licenses(*, session=None, db_mirror=False, cached=0, telemetry=True):
 def add_local_notifications(packages: List[Package],
                             ignore_unpinned_requirements: Optional[bool]) -> List[Dict[str, str]]:
     announcements = []
-    unpinned_packages: [str] = [f"{pkg.name}" for pkg in packages if pkg.has_unpinned_req()]
+    unpinned_packages: 'list[str]' = [f"{pkg.name}" for pkg in packages if pkg.has_unpinned_req()]
 
     if unpinned_packages and ignore_unpinned_requirements is not False:
         found = len(unpinned_packages)

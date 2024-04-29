@@ -269,7 +269,7 @@ def get_specifier_range_info(style: bool = True, pin_hint: bool = False) -> str:
     return f'{msg} {link}'
 
 
-def build_other_options_msg(fix_version: Optional[str], is_spec: bool, secure_options: [str]) -> str:
+def build_other_options_msg(fix_version: Optional[str], is_spec: bool, secure_options: 'list[str]') -> str:
     other_options_msg = ''
     raw_pre_other_options = ''
     outside = ''
